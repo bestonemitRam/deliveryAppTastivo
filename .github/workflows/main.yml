@@ -1,0 +1,35 @@
+name: Deploy to Play Store
+
+on:
+  push:
+    branches:
+      - main  # or your release branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.13.0'  # adjust as needed
+
+      - run: flutter pub get
+      - run: flutter build appbundle --release
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.0'
+
+      - name: Install fastlane
+        run: gem install fastlane
+
+      - name: Deploy with Fastlane
+        run: |
+          cd android
+          fastlane deploy
+        env:
+          SUPPLY_JSON_KEY: ${{ secrets.SUPPLY_JSON_KEY }}
