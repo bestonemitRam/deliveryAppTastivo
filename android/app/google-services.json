@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "480211706047",
+    "project_id": "tastivo-43543",
+    "storage_bucket": "tastivo-43543.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480211706047:android:86bce5c35322d3e00a660a",
+        "android_client_info": {
+          "package_name": "com.bmits.tastivo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk6b0oa0F6AOY-2MTIHlEweRSljtt_Kos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480211706047:android:f1f0be06ebec83af0a660a",
+        "android_client_info": {
+          "package_name": "com.bmits.tastivodriver"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk6b0oa0F6AOY-2MTIHlEweRSljtt_Kos"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
